@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Phone, Mail, MessageCircle, Star, Clock, Shield, Globe, Briefcase, CheckCircle, Menu, X, Calendar, MapPin, Users, Plane } from 'lucide-react';
 import BusinessCarddeals from '../components/BusinessCarddeals';
 import logo from "../images/logo/logo.png"
+import FirstClassDeals from '../components/FirstClassDeals';
 const FirstClassFlight = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [activeFirstClassSlide, setActiveFirstClassSlide] = useState(0);
@@ -157,15 +158,15 @@ const FirstClassFlight = () => {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="bg-slate-50">
             {/* Navigation */}
             <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center space-x-2">
-                       <img width={170}  src={logo} alt="logo" />
-                            
-                        </div>  
+                            <img width={170} src={logo} alt="logo" />
+
+                        </div>
 
                         <div className="hidden md:flex items-center space-x-8">
                             <a href="#home" className="text-white hover:text-red-500 transition-colors">Home</a>
@@ -316,104 +317,10 @@ const FirstClassFlight = () => {
             </section>
 
             {/* Business Class Deals */}
-            {/* <section id="business" className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Best Selling Business Class Deals</h2>
-                        <p className="text-xl text-gray-600">Exclusive offers on premium business class flights</p>
-                    </div>
-
-                    <div className="relative">
-                        <div className="overflow-hidden">
-                            <div className="flex transition-transform duration-500 ease-out" style={{ transform: `translateX(-${activeSlide * 100}%)` }}>
-                                {businessClassDeals.map((deal, idx) => (
-                                    <div key={idx} className="min-w-full px-4">
-                                        <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                                            <div className="relative h-64">
-                                                <img src={deal.image} alt={deal.route} className="w-full h-full object-cover" />
-                                                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold">
-                                                    {deal.discount}
-                                                </div>
-                                            </div>
-                                            <div className="p-6">
-                                                <h3 className="text-2xl font-bold text-gray-900 mb-2">{deal.route}</h3>
-                                                <p className="text-gray-600 mb-4">{deal.airline}</p>
-                                                <div className="flex items-end justify-between">
-                                                    <div>
-                                                        <p className="text-gray-400 line-through text-sm">{deal.originalPrice}</p>
-                                                        <p className="text-4xl font-bold text-red-500">{deal.price}</p>
-                                                    </div>
-                                                    <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                                                        Book Now
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <button onClick={() => prevSlide(false)} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors">
-                            <ChevronLeft className="w-6 h-6" />
-                        </button>
-                        <button onClick={() => nextSlide(false)} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors">
-                            <ChevronRight className="w-6 h-6" />
-                        </button>
-                    </div>
-                </div>
-            </section> */}
-
-            <BusinessCarddeals/>
+            <BusinessCarddeals />
 
             {/* First Class Deals */}
-            {/* <section id="first" className="py-20 bg-slate-900">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Best Selling First Class Deals</h2>
-                        <p className="text-xl text-gray-300">Experience ultimate luxury in the sky</p>
-                    </div>
-
-                    <div className="relative">
-                        <div className="overflow-hidden">
-                            <div className="flex transition-transform duration-500 ease-out" style={{ transform: `translateX(-${activeFirstClassSlide * 100}%)` }}>
-                                {firstClassDeals.map((deal, idx) => (
-                                    <div key={idx} className="min-w-full px-4">
-                                        <div className="bg-slate-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                                            <div className="relative h-64">
-                                                <img src={deal.image} alt={deal.route} className="w-full h-full object-cover" />
-                                                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold">
-                                                    {deal.discount}
-                                                </div>
-                                            </div>
-                                            <div className="p-6">
-                                                <h3 className="text-2xl font-bold text-white mb-2">{deal.route}</h3>
-                                                <p className="text-gray-300 mb-4">{deal.airline}</p>
-                                                <div className="flex items-end justify-between">
-                                                    <div>
-                                                        <p className="text-gray-500 line-through text-sm">{deal.originalPrice}</p>
-                                                        <p className="text-4xl font-bold text-red-500">{deal.price}</p>
-                                                    </div>
-                                                    <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                                                        Book Now
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <button onClick={() => prevSlide(true)} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors">
-                            <ChevronLeft className="w-6 h-6" />
-                        </button>
-                        <button onClick={() => nextSlide(true)} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors">
-                            <ChevronRight className="w-6 h-6" />
-                        </button>
-                    </div>
-                </div>
-            </section> */}
+            <FirstClassDeals />
 
             {/* How It Works */}
             {/* <section className="py-20 bg-gradient-to-b from-white to-slate-50">
