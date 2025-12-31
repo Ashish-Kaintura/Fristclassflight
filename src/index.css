@@ -1,1 +1,18 @@
 @import "tailwindcss";
+/* index.css or tailwind.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@400&display=swap');
+
+/* index.css or tailwind.css */
+
+body.h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}

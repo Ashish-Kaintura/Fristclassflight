@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Phone, Mail, MessageCircle, Star, Clock, Shield, Globe, Briefcase, CheckCircle, Menu, X, Calendar, MapPin, Users, Plane } from 'lucide-react';
-
+import BusinessCarddeals from '../components/BusinessCarddeals';
+import logo from "../images/logo/logo.png"
 const FirstClassFlight = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [activeFirstClassSlide, setActiveFirstClassSlide] = useState(0);
@@ -162,17 +163,17 @@ const FirstClassFlight = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center space-x-2">
-                            <Plane className="w-8 h-8 text-amber-500" />
-                            <span className="text-2xl font-bold text-white">First Class Flight</span>
-                        </div>
+                       <img width={170}  src={logo} alt="logo" />
+                            
+                        </div>  
 
                         <div className="hidden md:flex items-center space-x-8">
-                            <a href="#home" className="text-white hover:text-amber-500 transition-colors">Home</a>
-                            <a href="#business" className="text-white hover:text-amber-500 transition-colors">Business Class</a>
-                            <a href="#first" className="text-white hover:text-amber-500 transition-colors">First Class</a>
-                            <a href="#about" className="text-white hover:text-amber-500 transition-colors">About Us</a>
-                            <a href="#corporate" className="text-white hover:text-amber-500 transition-colors">Corporate</a>
-                            <a href="#contact" className="text-white hover:text-amber-500 transition-colors">Contact</a>
+                            <a href="#home" className="text-white hover:text-red-500 transition-colors">Home</a>
+                            <a href="#business" className="text-white hover:text-red-500 transition-colors">Business Class</a>
+                            <a href="#first" className="text-white hover:text-red-500 transition-colors">First Class</a>
+                            <a href="#about" className="text-white hover:text-red-500 transition-colors">About Us</a>
+                            <a href="#corporate" className="text-white hover:text-red-500 transition-colors">Corporate</a>
+                            <a href="#contact" className="text-white hover:text-red-500 transition-colors">Contact</a>
                         </div>
 
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white">
@@ -185,34 +186,35 @@ const FirstClassFlight = () => {
                 {isMenuOpen && (
                     <div className="md:hidden bg-slate-900/98 backdrop-blur-sm">
                         <div className="px-4 py-6 space-y-4">
-                            <a href="#home" className="block text-white hover:text-amber-500">Home</a>
-                            <a href="#business" className="block text-white hover:text-amber-500">Business Class</a>
-                            <a href="#first" className="block text-white hover:text-amber-500">First Class</a>
-                            <a href="#about" className="block text-white hover:text-amber-500">About Us</a>
-                            <a href="#corporate" className="block text-white hover:text-amber-500">Corporate</a>
-                            <a href="#contact" className="block text-white hover:text-amber-500">Contact</a>
+                            <a href="#home" className="block text-white hover:text-red-500">Home</a>
+                            <a href="#business" className="block text-white hover:text-red-500">Business Class</a>
+                            <a href="#first" className="block text-white hover:text-red-500">First Class</a>
+                            <a href="#about" className="block text-white hover:text-red-500">About Us</a>
+                            <a href="#corporate" className="block text-white hover:text-red-500">Corporate</a>
+                            <a href="#contact" className="block text-white hover:text-red-500">Contact</a>
                         </div>
                     </div>
                 )}
             </nav>
 
             {/* Hero Section */}
-            <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+            <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden "
+                style={{
+                    backgroundImage: 'url(https://i.postimg.cc/jSjhdY77/hero-2.jpg)',
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat"
+                }} >
                 <div className="absolute inset-0 z-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1583739027971-f0b25c9e8b4c?w=1920&q=80"
-                        alt="Luxury Aircraft Interior"
-                        className="w-full h-full object-cover"
-                    />
+
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/70"></div>
                 </div>
 
                 <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+                    <h1 className="text-3xl md:text-6xl  text-white mb-6 animate-fade-in uppercase mt-12">
                         Fly Business and<br />First Class for less
                     </h1>
 
-                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 mt-12 mb-16">
+                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 mt-4 mb-2">
                         {['Emirates', 'Etihad', 'Qatar Airways', 'Lufthansa', 'Singapore Airlines'].map((airline, idx) => (
                             <div key={idx} className="text-white/90 text-lg font-semibold px-4 py-2 bg-white/10 rounded-lg backdrop-blur-sm">
                                 {airline}
@@ -221,32 +223,32 @@ const FirstClassFlight = () => {
                     </div>
 
                     {/* Search Card */}
-                    <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-5xl mx-auto">
+                    <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-5xl mx-auto mt-4">
                         <div className="flex gap-4 mb-6 border-b pb-4">
-                            <button className="pb-2 border-b-2 border-amber-500 text-amber-600 font-semibold">Round Trip</button>
-                            <button className="pb-2 text-gray-500 hover:text-amber-600">One Way</button>
-                            <button className="pb-2 text-gray-500 hover:text-amber-600">Multi City</button>
+                            <button className="pb-2 border-b-2 border-red-500 text-red-600 font-semibold">Round Trip</button>
+                            <button className="pb-2 text-gray-500 hover:text-red-600">One Way</button>
+                            <button className="pb-2 text-gray-500 hover:text-red-600">Multi City</button>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-amber-500 transition-colors">
-                                <MapPin className="w-5 h-5 text-amber-500" />
+                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-red-500 transition-colors">
+                                <MapPin className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500">From</div>
                                     <input type="text" placeholder="City or Airport" className="w-full font-semibold text-gray-800 outline-none" />
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-amber-500 transition-colors">
-                                <MapPin className="w-5 h-5 text-amber-500" />
+                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-red-500 transition-colors">
+                                <MapPin className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500">To</div>
                                     <input type="text" placeholder="City or Airport" className="w-full font-semibold text-gray-800 outline-none" />
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-amber-500 transition-colors">
-                                <Calendar className="w-5 h-5 text-amber-500" />
+                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-red-500 transition-colors">
+                                <Calendar className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500">Departure</div>
                                     <div className="font-semibold text-gray-800">07.01.2026</div>
@@ -254,8 +256,8 @@ const FirstClassFlight = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-amber-500 transition-colors">
-                                <Calendar className="w-5 h-5 text-amber-500" />
+                            <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl hover:border-red-500 transition-colors">
+                                <Calendar className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500">Return</div>
                                     <div className="font-semibold text-gray-800">14.01.2026</div>
@@ -266,7 +268,7 @@ const FirstClassFlight = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                             <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl">
-                                <Users className="w-5 h-5 text-amber-500" />
+                                <Users className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500 mb-2">Passengers</div>
                                     <div className="flex gap-4">
@@ -293,7 +295,7 @@ const FirstClassFlight = () => {
                             </div>
 
                             <div className="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl">
-                                <Plane className="w-5 h-5 text-amber-500" />
+                                <Plane className="w-5 h-5 text-red-500" />
                                 <div className="flex-1">
                                     <div className="text-xs text-gray-500">Class</div>
                                     <select className="w-full font-semibold text-gray-800 outline-none bg-transparent">
@@ -306,7 +308,7 @@ const FirstClassFlight = () => {
                             </div>
                         </div>
 
-                        <button className="w-full mt-6 bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg">
+                        <button className="w-full mt-6 bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg">
                             SEARCH FLIGHTS
                         </button>
                     </div>
@@ -314,7 +316,7 @@ const FirstClassFlight = () => {
             </section>
 
             {/* Business Class Deals */}
-            <section id="business" className="py-20 bg-white">
+            {/* <section id="business" className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Best Selling Business Class Deals</h2>
@@ -339,9 +341,9 @@ const FirstClassFlight = () => {
                                                 <div className="flex items-end justify-between">
                                                     <div>
                                                         <p className="text-gray-400 line-through text-sm">{deal.originalPrice}</p>
-                                                        <p className="text-4xl font-bold text-amber-500">{deal.price}</p>
+                                                        <p className="text-4xl font-bold text-red-500">{deal.price}</p>
                                                     </div>
-                                                    <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                                    <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                                                         Book Now
                                                     </button>
                                                 </div>
@@ -360,10 +362,12 @@ const FirstClassFlight = () => {
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> */}
+
+            <BusinessCarddeals/>
 
             {/* First Class Deals */}
-            <section id="first" className="py-20 bg-slate-900">
+            {/* <section id="first" className="py-20 bg-slate-900">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Best Selling First Class Deals</h2>
@@ -378,7 +382,7 @@ const FirstClassFlight = () => {
                                         <div className="bg-slate-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
                                             <div className="relative h-64">
                                                 <img src={deal.image} alt={deal.route} className="w-full h-full object-cover" />
-                                                <div className="absolute top-4 right-4 bg-amber-500 text-white px-4 py-2 rounded-full font-bold">
+                                                <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-full font-bold">
                                                     {deal.discount}
                                                 </div>
                                             </div>
@@ -388,9 +392,9 @@ const FirstClassFlight = () => {
                                                 <div className="flex items-end justify-between">
                                                     <div>
                                                         <p className="text-gray-500 line-through text-sm">{deal.originalPrice}</p>
-                                                        <p className="text-4xl font-bold text-amber-500">{deal.price}</p>
+                                                        <p className="text-4xl font-bold text-red-500">{deal.price}</p>
                                                     </div>
-                                                    <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                                                    <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                                                         Book Now
                                                     </button>
                                                 </div>
@@ -409,10 +413,10 @@ const FirstClassFlight = () => {
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* How It Works */}
-            <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+            {/* <section className="py-20 bg-gradient-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How It Works</h2>
@@ -423,23 +427,23 @@ const FirstClassFlight = () => {
                         {steps.map((step, idx) => (
                             <div key={idx} className="relative">
                                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-                                    <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
+                                    <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6">
                                         {step.number}
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h3>
                                     <p className="text-gray-600 leading-relaxed">{step.description}</p>
                                 </div>
                                 {idx < steps.length - 1 && (
-                                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-amber-500"></div>
+                                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-red-500"></div>
                                 )}
                             </div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Advantages */}
-            <section id="about" className="py-20 bg-white">
+            {/* <section id="about" className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Sets Us Apart?</h2>
@@ -449,7 +453,7 @@ const FirstClassFlight = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {advantages.map((advantage, idx) => (
                             <div key={idx} className="bg-slate-50 rounded-2xl p-8 hover:bg-amber-50 transition-colors group">
-                                <div className="text-amber-500 mb-6 group-hover:scale-110 transition-transform">
+                                <div className="text-red-500 mb-6 group-hover:scale-110 transition-transform">
                                     {advantage.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">{advantage.title}</h3>
@@ -458,10 +462,10 @@ const FirstClassFlight = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Corporate Section */}
-            <section id="corporate" className="py-20 bg-slate-900 text-white">
+            {/* <section id="corporate" className="py-20 bg-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
@@ -472,7 +476,7 @@ const FirstClassFlight = () => {
                             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
                                 With a dedicated Flight Expert at your fingertips, one call or email is all it takes to book all aspects of your business flights, including special business travel pricing.
                             </p>
-                            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl font-semibold transition-colors">
+                            <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-xl font-semibold transition-colors">
                                 Learn More About Corporate Travel
                             </button>
                         </div>
@@ -485,43 +489,43 @@ const FirstClassFlight = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Contact Section */}
-            <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+            {/* <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Ready to Book Your Luxury Flight?</h2>
                     <p className="text-xl text-gray-600 mb-12">Contact our 24/7 flight experts today</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <a href="tel:+1234567890" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">
-                            <Phone className="w-12 h-12 text-amber-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                            <Phone className="w-12 h-12 text-red-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
                             <p className="text-gray-600">+1 (234) 567-890</p>
                         </a>
 
                         <a href="mailto:info@firstclassflight.com" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">
-                            <Mail className="w-12 h-12 text-amber-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                            <Mail className="w-12 h-12 text-red-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
                             <p className="text-gray-600">info@firstclassflight.com</p>
                         </a>
 
                         <a href="https://wa.me/1234567890" className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow group">
-                            <MessageCircle className="w-12 h-12 text-amber-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                            <MessageCircle className="w-12 h-12 text-red-500 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                             <h3 className="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
                             <p className="text-gray-600">Chat with us</p>
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-white py-12">
+            {/* <footer className="bg-slate-900 text-white py-12">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                         <div>
                             <div className="flex items-center space-x-2 mb-4">
-                                <Plane className="w-8 h-8 text-amber-500" />
+                                <Plane className="w-8 h-8 text-red-500" />
                                 <span className="text-xl font-bold">First Class Flight</span>
                             </div>
                             <p className="text-gray-400">Your trusted partner for luxury air travel at unbeatable prices.</p>
@@ -530,21 +534,21 @@ const FirstClassFlight = () => {
                         <div>
                             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
                             <ul className="space-y-2">
-                                <li><a href="#home" className="text-gray-400 hover:text-amber-500">Home</a></li>
-                                <li><a href="#business" className="text-gray-400 hover:text-amber-500">Business Class</a></li>
-                                <li><a href="#first" className="text-gray-400 hover:text-amber-500">First Class</a></li>
-                                <li><a href="#about" className="text-gray-400 hover:text-amber-500">About Us</a></li>
-                                <li><a href="#corporate" className="text-gray-400 hover:text-amber-500">Corporate Travel</a></li>
+                                <li><a href="#home" className="text-gray-400 hover:text-red-500">Home</a></li>
+                                <li><a href="#business" className="text-gray-400 hover:text-red-500">Business Class</a></li>
+                                <li><a href="#first" className="text-gray-400 hover:text-red-500">First Class</a></li>
+                                <li><a href="#about" className="text-gray-400 hover:text-red-500">About Us</a></li>
+                                <li><a href="#corporate" className="text-gray-400 hover:text-red-500">Corporate Travel</a></li>
                             </ul>
                         </div>
 
                         <div>
                             <h4 className="text-lg font-bold mb-4">Legal</h4>
                             <ul className="space-y-2">
-                                <li><a href="#" className="text-gray-400 hover:text-amber-500">Privacy Policy</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-amber-500">Terms of Service</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-amber-500">Cookie Policy</a></li>
-                                <li><a href="#" className="text-gray-400 hover:text-amber-500">Imprint</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-red-500">Privacy Policy</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-red-500">Terms of Service</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-red-500">Cookie Policy</a></li>
+                                <li><a href="#" className="text-gray-400 hover:text-red-500">Imprint</a></li>
                             </ul>
                         </div>
 
@@ -552,15 +556,15 @@ const FirstClassFlight = () => {
                             <h4 className="text-lg font-bold mb-4">Contact Us</h4>
                             <ul className="space-y-4">
                                 <li className="flex items-start space-x-3 text-gray-400">
-                                    <MapPin className="w-5 h-5 text-amber-500 shrink-0" />
+                                    <MapPin className="w-5 h-5 text-red-500 shrink-0" />
                                     <span>123 Luxury Avenue, Suite 100<br />New York, NY 10001</span>
                                 </li>
                                 <li className="flex items-center space-x-3 text-gray-400">
-                                    <Phone className="w-5 h-5 text-amber-500 shrink-0" />
+                                    <Phone className="w-5 h-5 text-red-500 shrink-0" />
                                     <span>+1 (234) 567-890</span>
                                 </li>
                                 <li className="flex items-center space-x-3 text-gray-400">
-                                    <Mail className="w-5 h-5 text-amber-500 shrink-0" />
+                                    <Mail className="w-5 h-5 text-red-500 shrink-0" />
                                     <span>info@firstclassflight.com</span>
                                 </li>
                             </ul>
@@ -571,7 +575,7 @@ const FirstClassFlight = () => {
                         <p>&copy; {new Date().getFullYear()} First Class Flight. All rights reserved.</p>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
         </div>
     );
 };
