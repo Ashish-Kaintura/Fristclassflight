@@ -141,21 +141,21 @@ const FirstClassFlight = () => {
         }
     ];
 
-    const nextSlide = (isFirstClass = false) => {
-        if (isFirstClass) {
-            setActiveFirstClassSlide((prev) => (prev + 1) % firstClassDeals.length);
-        } else {
-            setActiveSlide((prev) => (prev + 1) % businessClassDeals.length);
-        }
-    };
+    // const nextSlide = (isFirstClass = false) => {
+    //     if (isFirstClass) {
+    //         setActiveFirstClassSlide((prev) => (prev + 1) % firstClassDeals.length);
+    //     } else {
+    //         setActiveSlide((prev) => (prev + 1) % businessClassDeals.length);
+    //     }
+    // };
 
-    const prevSlide = (isFirstClass = false) => {
-        if (isFirstClass) {
-            setActiveFirstClassSlide((prev) => (prev - 1 + firstClassDeals.length) % firstClassDeals.length);
-        } else {
-            setActiveSlide((prev) => (prev - 1 + businessClassDeals.length) % businessClassDeals.length);
-        }
-    };
+    // const prevSlide = (isFirstClass = false) => {
+    //     if (isFirstClass) {
+    //         setActiveFirstClassSlide((prev) => (prev - 1 + firstClassDeals.length) % firstClassDeals.length);
+    //     } else {
+    //         setActiveSlide((prev) => (prev - 1 + businessClassDeals.length) % businessClassDeals.length);
+    //     }
+    // };
 
     return (
         <div className="bg-slate-50">
@@ -323,7 +323,7 @@ const FirstClassFlight = () => {
             <FirstClassDeals />
 
             {/* How It Works */}
-            {/* <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+            <section className="py-20 bg-gradient-to-b from-slate-300 to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How It Works</h2>
@@ -347,7 +347,7 @@ const FirstClassFlight = () => {
                         ))}
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* Advantages */}
             {/* <section id="about" className="py-20 bg-white">
@@ -427,13 +427,12 @@ const FirstClassFlight = () => {
             </section> */}
 
             {/* Footer */}
-            {/* <footer className="bg-slate-900 text-white py-12">
+            <footer className="bg-slate-900 text-white py-12">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                         <div>
                             <div className="flex items-center space-x-2 mb-4">
-                                <Plane className="w-8 h-8 text-red-500" />
-                                <span className="text-xl font-bold">First Class Flight</span>
+                                <img width={170} src={logo} alt="logo" />
                             </div>
                             <p className="text-gray-400">Your trusted partner for luxury air travel at unbeatable prices.</p>
                         </div>
@@ -482,7 +481,7 @@ const FirstClassFlight = () => {
                         <p>&copy; {new Date().getFullYear()} First Class Flight. All rights reserved.</p>
                     </div>
                 </div>
-            </footer> */}
+            </footer>
         </div>
     );
 };
