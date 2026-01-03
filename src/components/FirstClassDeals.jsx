@@ -9,7 +9,7 @@ const deals = [
         price: "$5,999",
         originalPrice: "$12,000",
         discount: "50% OFF",
-        image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?w=800&q=80"
+        image: "https://cdn.britannica.com/15/189715-050-4310222B/Dubai-United-Arab-Emirates-Burj-Khalifa-top.jpg"
     },
     {
         route: "New York → Hong Kong",
@@ -17,7 +17,7 @@ const deals = [
         price: "$6,499",
         originalPrice: "$13,500",
         discount: "52% OFF",
-        image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80"
+        image: "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071654/destination/rjgbib6j1mmzviy5gvi1.jpg"
     },
     {
         route: "Sydney → London",
@@ -25,7 +25,8 @@ const deals = [
         price: "$7,299",
         originalPrice: "$15,000",
         discount: "51% OFF",
-        image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80"
+        image: "https://www.thecityofldn.com/wp-content/uploads/2023/05/jamiesmithphoto-2162-Tower-Bridge-with-City-behind-reduced-2000x1334.jpg",
+
     },
     {
         route: "Frankfurt → San Francisco",
@@ -33,23 +34,17 @@ const deals = [
         price: "$5,799",
         originalPrice: "$11,800",
         discount: "50% OFF",
-        image: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=80"
+        image: "https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg?w=400&h=225&c=crop"
     },
-    {
-        route: "London → Dubai",
-        airline: "Emirates A380",
-        price: "$5,999",
-        originalPrice: "$12,000",
-        discount: "50% OFF",
-        image: "https://images.unsplash.com/photo-1542296332-2e4473faf563?w=800&q=80"
-    },
+  
     {
         route: "New York → Hong Kong",
         airline: "Cathay Pacific",
         price: "$6,499",
         originalPrice: "$13,500",
         discount: "52% OFF",
-        image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80"
+        image: "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071654/destination/rjgbib6j1mmzviy5gvi1.jpg"
+
     },
     {
         route: "Sydney → London",
@@ -57,16 +52,10 @@ const deals = [
         price: "$7,299",
         originalPrice: "$15,000",
         discount: "51% OFF",
-        image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80"
+        image: "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071506/destination/f8u2ktjkdlnbyrif6yls.jpg"
+
     },
-    {
-        route: "Frankfurt → San Francisco",
-        airline: "Lufthansa",
-        price: "$5,799",
-        originalPrice: "$11,800",
-        discount: "50% OFF",
-        image: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=800&q=80"
-    },
+   
 ];
 
 export default function FirstClassDeals() {
@@ -150,7 +139,7 @@ export default function FirstClassDeals() {
                         Best Selling
                     </h4>
                     <h5 className="text-4xl ">
-                        Exclusive premium flight offers
+                        Exclusive Premium Frist Class Flight Deals
                     </h5>
                 </div>
 

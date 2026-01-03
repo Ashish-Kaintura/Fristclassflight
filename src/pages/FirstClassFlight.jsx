@@ -350,7 +350,7 @@ const FirstClassFlight = () => {
             </section>
 
             {/* Advantages */}
-            {/* <section id="about" className="py-20 bg-white">
+            <section id="about" className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What Sets Us Apart?</h2>
@@ -369,10 +369,10 @@ const FirstClassFlight = () => {
                         ))}
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* Corporate Section */}
-            {/* <section id="corporate" className="py-20 bg-slate-900 text-white">
+            <section id="corporate" className="py-20 bg-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
@@ -396,10 +396,10 @@ const FirstClassFlight = () => {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* Contact Section */}
-            {/* <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-white">
+            <section id="contact" className="py-20 bg-gradient-to-b from-slate-50 to-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Ready to Book Your Luxury Flight?</h2>
                     <p className="text-xl text-gray-600 mb-12">Contact our 24/7 flight experts today</p>
@@ -424,7 +424,7 @@ const FirstClassFlight = () => {
                         </a>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* Footer */}
             <footer className="bg-slate-900 text-white py-12">

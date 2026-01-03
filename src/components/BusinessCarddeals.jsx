@@ -3,45 +3,38 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const deals = [
     {
-        image: "https://images.unsplash.com/photo-1542296332-2e4473faf563",
-        route: "New York → London",
-        airline: "British Airways",
-        price: "$2,450",
-        originalPrice: "$3,200",
-        discount: "25% OFF",
-    },
-    {
-        image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df",
-        route: "Dubai → Paris",
-        airline: "Emirates",
-        price: "$2,980",
-        originalPrice: "$3,750",
-        discount: "20% OFF",
-    },
-    {
-        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-        route: "Los Angeles → Tokyo",
-        airline: "Japan Airlines",
-        price: "$3,100",
-        originalPrice: "$3,950",
+        image: "https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg",
+        route: "Delhi → New York",
+        airline: "Air India",
+        price: "$89,999",
+        originalPrice: "$1,15,000",
         discount: "22% OFF",
     },
     {
-        image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-        route: "Toronto → Frankfurt",
-        airline: "Lufthansa",
-        price: "$2,650",
-        originalPrice: "$3,400",
-        discount: "18% OFF",
+        image: "https://www.thecityofldn.com/wp-content/uploads/2023/05/jamiesmithphoto-2162-Tower-Bridge-with-City-behind-reduced-2000x1334.jpg",
+        route: "Mumbai → London",
+        airline: "British Airways",
+        price: "$74,500",
+        originalPrice: "$95,000",
+        discount: "21% OFF"
     },
     {
-        image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-        route: "Sydney → Singapore",
-        airline: "Singapore Airlines",
-        price: "$2,400",
-        originalPrice: "$3,000",
+        image: "https://www.deutschland.de/sites/default/files/media/image/TdT_05032020_Frankfurt_Skyline.jpg",
+        route: "Delhi → Frankfurt",
+        airline: "Lufthansa",
+        price: "$68,500",
+        originalPrice: "$89,000",
         discount: "20% OFF",
     },
+    {
+        image: "https://blog.onevasco.com/wp-content/uploads/Singapore-Visa-for-Indians.jpg",
+        route: "Hyderabad → Singapore",
+        airline: "Singapore Airlines",
+        price: "$39,999",
+        originalPrice: "$52,000",
+        discount: "23% OFF",
+    },
+
 ];
 
 export default function BusinessCarddeals() {
@@ -118,14 +111,14 @@ export default function BusinessCarddeals() {
     };
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
                     <h4 className="text-sm uppercase font-semibold mb-1  text-blue-600 tracking-wide">
                         Best Selling
                     </h4>
                     <h5 className="text-4xl ">
-                        Exclusive premium flight offers
+                        Exclusive Premium Flight Offers
                     </h5>
                 </div>
 
