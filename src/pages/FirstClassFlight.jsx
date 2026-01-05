@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, Phone, Mail, MessageCircle, Star, Clock, Shi
 import BusinessCarddeals from '../components/BusinessCarddeals';
 import logo from "../images/logo/logo.png"
 import FirstClassDeals from '../components/FirstClassDeals';
+import HowitWork from '../components/HowitWork';
 const FirstClassFlight = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [activeFirstClassSlide, setActiveFirstClassSlide] = useState(0);
@@ -348,7 +349,7 @@ const FirstClassFlight = () => {
                     </div>
                 </div>
             </section>
-
+            <HowitWork />
             {/* Advantages */}
             <section id="about" className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4">

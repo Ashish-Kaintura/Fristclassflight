@@ -3,38 +3,45 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const deals = [
     {
-        image: "https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg",
-        route: "Delhi → New York",
-        airline: "Air India",
-        price: "$89,999",
-        originalPrice: "$1,15,000",
-        discount: "22% OFF",
-    },
-    {
-        image: "https://www.thecityofldn.com/wp-content/uploads/2023/05/jamiesmithphoto-2162-Tower-Bridge-with-City-behind-reduced-2000x1334.jpg",
-        route: "Mumbai → London",
+        image: "https://media.cntravellerme.com/photos/650af944349d8c31fad3d512/2:1/w_2560%2Cc_limit/LONDON%2520GettyImages-1286286521.jpg",
+        route: "New York → London",
         airline: "British Airways",
-        price: "$74,500",
-        originalPrice: "$95,000",
-        discount: "21% OFF"
+        price: "$2,450",
+        originalPrice: "$3,200",
+        discount: "25% OFF",
     },
     {
-        image: "https://www.deutschland.de/sites/default/files/media/image/TdT_05032020_Frankfurt_Skyline.jpg",
-        route: "Delhi → Frankfurt",
-        airline: "Lufthansa",
-        price: "$68,500",
-        originalPrice: "$89,000",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHvJjnU4zhIXvgZ9Se1O1UV1jaJKsHp0N5pw&s",
+        route: "Dubai → Paris",
+        airline: "Emirates",
+        price: "$2,980",
+        originalPrice: "$3,750",
         discount: "20% OFF",
     },
     {
-        image: "https://blog.onevasco.com/wp-content/uploads/Singapore-Visa-for-Indians.jpg",
-        route: "Hyderabad → Singapore",
-        airline: "Singapore Airlines",
-        price: "$39,999",
-        originalPrice: "$52,000",
-        discount: "23% OFF",
+        image: "https://media.cntraveller.com/photos/6343df288d5d266e2e66f082/16:9/w_2560%2Cc_limit/tokyoGettyImages-1031467664.jpeg",
+        route: "Los Angeles → Tokyo",
+        airline: "Japan Airlines",
+        price: "$3,100",
+        originalPrice: "$3,950",
+        discount: "22% OFF",
     },
-
+    {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHKt97fFDBq7mlV0b2lJUAQ2WBjD86Vh3MRA&s",
+        route: "Toronto → Frankfurt",
+        airline: "Lufthansa",
+        price: "$2,650",
+        originalPrice: "$3,400",
+        discount: "18% OFF",
+    },
+    {
+        image: "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/542000/542607-singapore.jpg",
+        route: "Sydney → Singapore",
+        airline: "Singapore Airlines",
+        price: "$2,400",
+        originalPrice: "$3,000",
+        discount: "20% OFF",
+    },
 ];
 
 export default function BusinessCarddeals() {
@@ -111,14 +118,14 @@ export default function BusinessCarddeals() {
     };
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
                     <h4 className="text-sm uppercase font-semibold mb-1  text-blue-600 tracking-wide">
                         Best Selling
                     </h4>
                     <h5 className="text-4xl ">
-                        Exclusive Premium Flight Offers
+                        Exclusive premium flight offers
                     </h5>
                 </div>
 
@@ -151,7 +158,7 @@ export default function BusinessCarddeals() {
                                         <img
                                             src={deal.image}
                                             alt={deal.route}
-                                            className="w-full h-full object-cover rounded-t-2xl"
+                                            className="w-full h-full object-cover rounded-t-2xl "
                                             draggable={false}
                                         />
                                         <span className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
