@@ -175,7 +175,7 @@ export default function FirstClassDeals() {
                                             className="w-full h-full object-cover rounded-t-2xl"
                                             draggable={false}
                                         />
-                                        <span className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                        <span className="absolute top-4 right-4 bg-[#c8a27a] text-whitepx-3 py-1 px-2 rounded-full text-sm font-semibold">
                                             {deal.discount}
                                         </span>
                                     </div>
@@ -188,11 +188,11 @@ export default function FirstClassDeals() {
                                                 <p className="text-sm line-through text-gray-400">
                                                     {deal.originalPrice}
                                                 </p>
-                                                <p className="text-2xl font-bold text-red-700">
+                                                <p className="text-2xl font-bold text-[#c8a27a]">
                                                     {deal.price}
                                                 </p>
                                             </div>
-                                            {/* <button className="bg-retext-red-700 hover:bg-amber-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                                            {/* <button className="bg-retext-[#c8a27a] hover:bg-amber-600 text-white px-4 py-2 rounded-lg text-sm font-semibold">
                                                 Book Now
                                             </button> */}
                                         </div>

@@ -161,7 +161,7 @@ export default function BusinessCarddeals() {
                                             className="w-full h-full object-cover rounded-t-2xl "
                                             draggable={false}
                                         />
-                                        <span className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                        <span className="absolute top-4 right-4 bg-[#c8a27a] text-white px-3 py-1 rounded-full text-sm font-semibold">
                                             {deal.discount}
                                         </span>
                                     </div>
@@ -174,7 +174,7 @@ export default function BusinessCarddeals() {
                                                 <p className="text-sm line-through text-gray-400">
                                                     {deal.originalPrice}
                                                 </p>
-                                                <p className="text-2xl font-bold text-red-700">
+                                                <p className="text-2xl font-bold text-[#c8a27a]">
                                                     {deal.price}
                                                 </p>
                                             </div>
