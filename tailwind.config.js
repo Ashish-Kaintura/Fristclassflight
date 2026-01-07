@@ -6,6 +6,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                primary: '#c8a27a',
+            },
             fontFamily: {
                 playfair: ['Playfair Display', 'serif'],
                 inter: ['Inter', 'sans-serif'],

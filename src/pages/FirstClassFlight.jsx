@@ -161,46 +161,10 @@ const FirstClassFlight = () => {
 
     return (
         <div className="bg-slate-50">
-            {/* Navigation */}
-            <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex justify-between items-center h-20">
-                        <div className="flex items-center space-x-2">
-                            <img width={170} src={logo} alt="logo" />
 
-                        </div>
-
-                        <div className="hidden md:flex items-center space-x-8">
-                            <a href="#home" className="text-white hover:text-[#c8a27a] transition-colors">Home</a>
-                            <a href="#business" className="text-white hover:text-[#c8a27a] transition-colors">Business Class</a>
-                            <a href="#first" className="text-white hover:text-[#c8a27a] transition-colors">First Class</a>
-                            <a href="#about" className="text-white hover:text-[#c8a27a] transition-colors">About Us</a>
-                            <a href="#corporate" className="text-white hover:text-[#c8a27a] transition-colors">Corporate</a>
-                            <a href="#contact" className="text-white hover:text-[#c8a27a] transition-colors">Contact</a>
-                        </div>
-
-                        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white">
-                            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                        </button>
-                    </div>
-                </div>
-
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-                    <div className="md:hidden bg-slate-900/98 backdrop-blur-sm">
-                        <div className="px-4 py-6 space-y-4">
-                            <a href="#home" className="block text-white hover:text-[#c8a27a]">Home</a>
-                            <a href="#business" className="block text-white hover:text-[#c8a27a]">Business Class</a>
-                            <a href="#first" className="block text-white hover:text-[#c8a27a]">First Class</a>
-                            <a href="#about" className="block text-white hover:text-[#c8a27a]">About Us</a>
-                            <a href="#corporate" className="block text-white hover:text-[#c8a27a]">Corporate</a>
-                            <a href="#contact" className="block text-white hover:text-[#c8a27a]">Contact</a>
-                        </div>
-                    </div>
-                )}
-            </nav>
-
+         
             {/* Hero Section */}
+            
             <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden "
                 style={{
                     backgroundImage: 'url(https://i.postimg.cc/jSjhdY77/hero-2.jpg)',
