@@ -136,7 +136,7 @@ export default function AboutUs() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.7 }}
-                    className="text-3xl md:text-4xl font-semibold text-center mb-16"
+                    className="text-3xl md:text-4xl font-semibold text-center mb-16 text-[#C8A27A]"
                 >
                     Advantages When Booking With Us
                 </motion.h2>
@@ -151,16 +151,16 @@ export default function AboutUs() {
                             transition={{ delay: i * 0.1 }}
                             className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition"
                         >
-                            <adv.icon className="h-10 w-10 text-amber-400 mb-4" />
-                            <h3 className="text-xl font-semibold mb-3">{adv.title}</h3>
-                            <p className="text-gray-400 leading-relaxed">{adv.desc}</p>
+                            <adv.icon className="h-10 w-10 text-[#C8A27A] mb-4" />
+                            <h3 className="text-xl font-semibold mb-3 text-[#C8A27A]">{adv.title}</h3>
+                            <p className="text-white leading-relaxed">{adv.desc}</p>
                         </motion.div>
                     ))}
                 </div>
             </section>
 
             {/* Footer CTA */}
-            <section className="text-center py-20 bg-gradient-to-r from-amber-400 to-yellow-500 text-black">
+            <section className="text-center py-20 bg-gradient-to-r from-[#caa073] to-[#C8A27A] text-black">
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

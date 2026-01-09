@@ -19,7 +19,8 @@ export default function NavBar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center space-x-2">
-                            <img width={170} src={logo} alt="logo" />
+                            <Link to="">  <img width={170} src={logo} alt="logo" /></Link>
+                           
                         </div>
 
                         <div className="hidden md:flex items-center space-x-8">
@@ -28,7 +29,7 @@ export default function NavBar() {
                             <Link to="#first" className="text-white hover:text-[#c8a27a] transition-colors">First Class</Link>
                             <Link to="/about-us" className="text-white hover:text-[#c8a27a] transition-colors">About Us</Link>
                             <Link to="#corporate" className="text-white hover:text-[#c8a27a] transition-colors">Corporate</Link>
-                            <Link to="#contact" className="text-white hover:text-[#c8a27a] transition-colors">Contact</Link>
+                            <Link to="/contact-us" className="text-white hover:text-[#c8a27a] transition-colors">Contact</Link>
                         </div>
 
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white">
@@ -46,7 +47,7 @@ export default function NavBar() {
                             <Link to="#first" className="block text-white hover:text-[#c8a27a]">First Class</Link>
                             <Link to="#about" className="block text-white hover:text-[#c8a27a]">About Us</Link>
                             <Link to="#corporate" className="block text-white hover:text-[#c8a27a]">Corporate</Link>
-                            <Link to="#contact" className="block text-white hover:text-[#c8a27a]">Contact</Link>
+                            <Link to="/contact-us" className="block text-white hover:text-[#c8a27a]">Contact</Link>
                         </div>
                     </div>
                 )}
