@@ -25,8 +25,8 @@ export default function NavBar() {
 
                         <div className="hidden md:flex items-center space-x-8">
                             <Link to="/" className="text-white hover:text-[#c8a27a] transition-colors">Home</Link>
-                            <Link to="#business" className="text-white hover:text-[#c8a27a] transition-colors">Business Class</Link>
-                            <Link to="#first" className="text-white hover:text-[#c8a27a] transition-colors">First Class</Link>
+                            <Link to="/business-class-flight" className="text-white hover:text-[#c8a27a] transition-colors">Business Class</Link>
+                            <Link to="/frist-class-flight" className="text-white hover:text-[#c8a27a] transition-colors">First Class</Link>
                             <Link to="/about-us" className="text-white hover:text-[#c8a27a] transition-colors">About Us</Link>
                             <Link to="#corporate" className="text-white hover:text-[#c8a27a] transition-colors">Corporate</Link>
                             <Link to="/contact-us" className="text-white hover:text-[#c8a27a] transition-colors">Contact</Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
                         <div className="px-4 py-6 space-y-4">
                             <Link to="#home" className="block text-white hover:text-[#c8a27a]">Home</Link>
                             <Link to="#business" className="block text-white hover:text-[#c8a27a]">Business Class</Link>
-                            <Link to="#first" className="block text-white hover:text-[#c8a27a]">First Class</Link>
+                            <Link to="/frist-class-flight" className="block text-white hover:text-[#c8a27a]">First Class</Link>
                             <Link to="#about" className="block text-white hover:text-[#c8a27a]">About Us</Link>
                             <Link to="#corporate" className="block text-white hover:text-[#c8a27a]">Corporate</Link>
                             <Link to="/contact-us" className="block text-white hover:text-[#c8a27a]">Contact</Link>
